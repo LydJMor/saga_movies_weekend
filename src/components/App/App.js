@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import './App.css';
 import { HashRouter as Router, Route } from "react-router-dom";
 
@@ -16,7 +17,7 @@ class App extends Component {
         <header>
         <h1>Let's Watch A Movie</h1>
         </header>
-        <nav href="/genres">Genres</nav>
+        <nav href="">Genres</nav>
       </div>
 
 
