@@ -26,3 +26,7 @@
 header {
   background-color: cadetblue;
 }
+
+#enter-btn {
+  float: center;
+}

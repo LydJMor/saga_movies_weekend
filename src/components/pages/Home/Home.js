@@ -6,9 +6,9 @@ class Home extends Component {
  
     render(){
         return (
-            <>
-            
-            </>
+            <div id="enter-btn">
+            <button>Enter the Matrix</button>
+            </div>
     );
   }
 }
