@@ -9,13 +9,13 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 // Import saga middleware
 import createSagaMiddleware from 'redux-saga';
-import { put } from 'redux-saga/effects';
+import { takeEvery, put } from 'redux-saga/effects';
 //Import axios
 import axios from 'axios';
 
 // Create the rootSaga generator function
 function* rootSaga() {
-yield getMovies
+    yield takeEvery( 'FETCH_MOVIES', getMovies );
 }
 
 // Create sagaMiddleware
